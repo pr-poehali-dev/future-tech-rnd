@@ -19,18 +19,18 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Mountain landscape"
+          src="https://cdn.poehali.dev/projects/a84c2803-c3b0-4106-ab77-984125fdc48b/files/066a0133-8ab4-49c3-940b-8c65da446314.jpg"
+          alt="Mars landscape"
           className="w-full h-full object-cover"
         />
       </motion.div>
 
       <div className="relative z-10 text-center text-white">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
+          МАРС ЖДЁТ
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+          Человечество делает следующий шаг. Узнай, как будет выглядеть жизнь на Красной планете — уже в этом веке.
         </p>
       </div>
     </div>
