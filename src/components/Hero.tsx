@@ -1,7 +1,9 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+  const navigate = useNavigate();
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -29,9 +31,15 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
           МАРС ЖДЁТ
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90 mb-8">
           Человечество делает следующий шаг. Узнай, как будет выглядеть жизнь на Красной планете — уже в этом веке.
         </p>
+        <button
+          onClick={() => navigate("/presentation")}
+          className="border border-white text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-all duration-300"
+        >
+          Открыть презентацию
+        </button>
       </div>
     </div>
   );
